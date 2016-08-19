@@ -24,10 +24,10 @@
 
 <PongGame>:
     ball: pong_ball
-    player1: player_left
-    player2: player_right
-    player3:player_up
-    player4:player_down
+    player_l: player_left
+    player_r: player_right
+    player_u:player_up
+    player_d:player_down
     
     canvas:
         Color:
@@ -40,25 +40,25 @@
         font_size: 35 
         center_x: root.width / 6
         top: root.top - root.height/2
-        text: str(root.player1.score)
+        text: str(root.player_l.score)
         
     Label:
         font_size:35 
         center_x: root.width * 5/6
         top: root.top - root.height/2
-        text: str(root.player2.score)
+        text: str(root.player_r.score)
 
     Label:
         font_size:35
         right:root.right/2
         center_y:root.top/6
-        text:str(root.player3.score)
+        text:str(root.player_u.score)
 
     Label:
         font_size:35
         right:root.right/2
         center_y:root.top-(root.top*1/6)
-        text:str(root.player4.score)
+        text:str(root.player_d.score)
     
     PongBall:
         id: pong_ball
