@@ -39,10 +39,10 @@ class PongBall(Widget):
 
 class PongGame(Widget):
     ball = ObjectProperty(None)
-    player1 = ObjectProperty(None)
-    player2 = ObjectProperty(None)
-    player3 = ObjectProperty(None)
-    player4 = ObjectProperty(None)
+    player_l = ObjectProperty(None)
+    player_r = ObjectProperty(None)
+    player_u = ObjectProperty(None)
+    player_d = ObjectProperty(None)
 
 
     def ball_again(self, vel=(20, 0)):
